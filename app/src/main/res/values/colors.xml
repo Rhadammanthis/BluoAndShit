@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3C8CED</color>
+    <color name="colorPrimaryDark">#3C8CED</color>
+    <color name="colorAccent">#30B4FF</color>
+    <color name="blueButtonPrimary">#3C8CED</color>
+    <color name="blueButtonDark">#145CC0</color>
+    <color name="blueButtonDisabled">#9B9B9B</color>
+    <color name="hint">#9B9B9B</color>
+    <color name="cardBackground">#EBEBEB</color>
+    <color name="lineSeparator">#DFDFDF</color>
+    <color name="blueText">#30B4FF</color>
+    <color name="blueBorder">#53D4F3</color>
+    <color name="cardGreyBackground">#EBEBEB</color>
+    <color name="bluoGreen">#7ED320</color>
+    <color name="bluoOrange">#F5A623</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="toolbar_color_1">#56BCF6 </color>
+    <color name="toolbar_color_2">#039DE7 </color>
+    <color name="toolbar_color_3">#3583E2 </color>
+    <color name="toolbar_color_4">#2F77DB </color>
+</resources>

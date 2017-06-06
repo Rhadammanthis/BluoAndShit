@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diagnostic_rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/diagnostic_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                app:srcCompat="@drawable/a_usuario_perfil"
+                android:id="@+id/diagnostic_iv_profile" />
+
+            <TextView
+                android:layout_marginTop="5dip"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/blueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diagnostic_tv_name" />
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/diagnostic_last_diagnostic"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diagnostic_tv_last" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_margin="20dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/diagnostic_tb_glucose"
+                    android:text="@string/diagnostic_button_glucose"
+                    android:textOff="@string/diagnostic_button_glucose"
+                    android:textOn="@string/diagnostic_button_glucose"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="35dip"
+                    android:background="@drawable/styled_toggle_button_background"
+                    android:textColor="@drawable/styled_button_text" />
+
+                <ToggleButton
+                    android:id="@+id/diagnostic_tb_oxygen"
+                    android:text="@string/diagnostic_button_oxygen"
+                    android:textOff="@string/diagnostic_button_oxygen"
+                    android:textOn="@string/diagnostic_button_oxygen"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="35dip"
+                    android:background="@drawable/styled_toggle_button_background"
+                    android:textColor="@drawable/styled_button_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ToggleButton
+                    android:id="@+id/diagnostic_tb_pulse"
+                    android:text="@string/diagnostic_button_pulse"
+                    android:textOff="@string/diagnostic_button_pulse"
+                    android:textOn="@string/diagnostic_button_pulse"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="35dip"
+                    android:background="@drawable/styled_toggle_button_background"
+                    android:textColor="@drawable/styled_button_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:background="@drawable/card_background">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_marginTop="3dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="7:08 am"
+                            android:textSize="11sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/diagnostic_tv_time"/>
+
+                        <TextView
+                            android:text="14 - Febrero - 2016"
+                            android:textSize="11sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/diagnostic_tv_date"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/lineSeparator"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/linearLayout">
+
+                    <RelativeLayout
+                        android:layout_weight="0.55"
+                        android:layout_width="0dip"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:background="@drawable/clear_card_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:layout_alignParentTop="true">
+
+                            <LinearLayout
+                                android:id="@+id/diagnostic_ll_pulse"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="0dip">
+
+                                    <EditText
+                                        android:id="@+id/diagnostic_et_pulse"
+                                        android:hint="@string/system_0"
+                                        android:textColorHint="@color/hint"
+                                        android:ems="3"
+                                        android:background="#00000000"
+                                        android:textSize="30sp"
+                                        android:gravity="center"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/blueText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <View
+                                        android:background="@color/cardBackground"
+                                        android:layout_width="2dip"
+                                        android:layout_height="match_parent" />
+
+                                    <EditText
+                                        android:id="@+id/diagnostic_et_pulse1"
+                                        android:hint="@string/system_0"
+                                        android:textColorHint="@color/hint"
+                                        android:ems="3"
+                                        android:background="#00000000"
+                                        android:textSize="30sp"
+                                        android:gravity="center"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@color/blueText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:background="@drawable/dark_styled_button_background"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_height="0dip">
+
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <EditText
+                                            android:id="@+id/diagnostic_et_pulse2"
+                                            android:hint="@string/system_0"
+                                            android:textColorHint="#FFFFFF"
+                                            android:background="#00000000"
+                                            android:textSize="30sp"
+                                            android:gravity="center"
+                                            android:inputType="numberDecimal"
+                                            android:textColor="#FFFFFF"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent" />
+                                        <ImageView
+                                            android:layout_marginStart="5dip"
+                                            android:layout_width="10dip"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/a_heart"/>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/diagnostic_et_data"
+                                android:hint="@string/system_0"
+                                android:textColorHint="@color/hint"
+                                android:textSize="30sp"
+                                android:background="#00000000"
+                                android:gravity="center"
+                                android:textColor="@color/blueText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="numberDecimal" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:layout_weight="0.45"
+                        android:layout_width="0dip"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true">
+
+                            <TextView
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                android:text="@string/diagnostic_magnitude_glucose"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/diagnostic_tv_magnitude"
+                                android:layout_marginBottom="10dip"/>
+
+                            <Button
+                                android:id="@+id/diagnostic_b_save"
+                                android:enabled="false"
+                                android:text="@string/system_save"
+                                android:textOff="@string/system_save"
+                                android:textOn="@string/system_save"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="35dip"
+                                android:background="@drawable/styled_button_background"
+                                android:textColor="@drawable/styled_button_text"/>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/diagnostic_b_analyze"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="20dip"
+                android:minHeight="35dip"
+                android:layout_gravity="center"
+                android:text="@string/diagnostic_button_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:background="@drawable/styled_button_background"
+                android:textColor="@drawable/styled_button_text" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/diagnostic_ll_welcome"
+        android:visibility="gone"
+        android:paddingStart="50dip"
+        android:paddingEnd="50dip"
+        android:paddingTop="20dip"
+        android:paddingBottom="20dip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/a_personaje_bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/diagnostic_b_dump"
+            android:text="@string/status_dump"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textSize="17sp"
+            android:textColor="@drawable/dark_styled_button_text"
+            android:background="@drawable/dark_styled_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

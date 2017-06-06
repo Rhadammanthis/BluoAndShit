@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+
+    <ImageView
+        android:id="@+id/status_iv_status"
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a_personaje_ok"
+        android:layout_above="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_marginTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:id="@+id/status_ib_health"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/a_salud" />
+
+            <ImageButton
+                android:id="@+id/status_ib_health_notif"
+                android:visibility="gone"
+                android:layout_width="63dip"
+                android:layout_height="58dip"
+                android:background="@drawable/a_salud_noti"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/status_ib_exercise"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/a_ejercicios"/>
+
+            <ImageButton
+                android:id="@+id/status_ib_exercise_notif"
+                android:visibility="gone"
+                android:layout_width="63dip"
+                android:layout_height="58dip"
+                android:background="@drawable/a_ejercicios_noti"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" >
+
+
+            <ImageButton
+                android:id="@+id/status_ib_nutrition"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/a_alimentacion"/>
+
+            <ImageButton
+                android:id="@+id/status_ib_nutrition_notif"
+                android:visibility="gone"
+                android:layout_width="63dip"
+                android:layout_height="58dip"
+                android:background="@drawable/a_alimentacion_noti"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ToggleButton
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:textOn=" "
+            android:textOff=" "
+            android:background="@drawable/selector_ultima_medicion"
+            android:id="@+id/status_tb_last" />
+
+        <Button
+            android:id="@+id/status_b_new_diagnostic"
+            android:text="@string/status_new_diagnostic"
+            android:layout_marginLeft="20dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textSize="17sp"
+            android:textColor="@drawable/dark_styled_button_text"
+            android:background="@drawable/dark_styled_button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/status_tb_last" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_rl_diagnostic_card"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diagnostic_card_background"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="70dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/diagnostic_last_diagnostic"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:text="@string/diagnostic_button_pulse"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/status_tv_pulse"
+                android:paddingStart="40dip"
+                android:paddingEnd="50dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:background="@drawable/clear_card_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blueButtonPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/diagnostic_button_oxygen"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/status_tv_oxygen"
+                android:paddingStart="40dip"
+                android:paddingEnd="50dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:background="@drawable/clear_card_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blueButtonPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/diagnostic_button_glucose"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/status_tv_glucose"
+                android:paddingStart="40dip"
+                android:paddingEnd="50dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:background="@drawable/clear_card_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blueButtonPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

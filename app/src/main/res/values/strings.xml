@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Bluo - PP</string>
+    <string name="hello"><b>Hello</b> World, fh!</string>
+    <string name="system_save">Guardar</string>
+    <string name="system_yes">Sí</string>
+    <string name="system_no">No</string>
+    <string name="system_0">0</string>
+    <string name="system_alert">Alerta</string>
+    <string name="system_invalid_phone">Este número no tiene una cuenta para ingresar al sistema BLUO, le sugerimos ponerse en contacto con su médico</string>
+    <string name="system_no_phone">Por favor introduce un teléfono válido</string>
+    <string name="system_sure">¿Estás seguro que deseas cerrar la sesión?</string>
+    <string name="system_analyzing">Analizando los datos</string>
+    <string name="system_loading_user_info">Cargando información del usuario</string>
+    <string name="system_loading">Cargando&#8230;</string>
+    <string name="system_logging_in">Iniciando sesión</string>
+    <string name="system_error">Se ha producido un error</string>
+    <string name="system_no_network">No hay conexión a internet disponible. Revisa el WiFi de tu dispositivo o datos móviles</string>
+    <string name="system_auth_error">Necesitas volver a iniciar sesión</string>
+    <string name="system_no_content">No hay contenido que mostrar</string>
+    <string name="system_missing_content">No hay contenido suficiente</string>
+    <!--Login-->
+    <string name="login_input_hint">Ingresa tu celular</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_back">Regresar</string>
+    <!--Diagnostic-->
+    <string name="diagnostic_last_diagnostic">Última medición: </string>
+    <string name="diagnostic_button_glucose">Glucosa</string>
+    <string name="diagnostic_button_oxygen">Oxígeno</string>
+    <string name="diagnostic_button_pulse">Presión</string>
+    <string name="diagnostic_button_analyze">Analiza mis datos</string>
+    <string name="diagnostic_magnitude_glucose">mg-dL</string>
+    <string name="diagnostic_magnitude_oxygen">% SpO&lt;small&gt;2&lt;/small&gt;</string>
+    <string name="diagnostic_magnitude_pulse">mmHg</string>
+    <!--Status-->
+    <string name="status_new_diagnostic">Nueva medición</string>
+    <string name="status_dump">Carga de datos</string>
+    <!--Test-->
+    <string name="test_help">Te ayeudaré con un pequeño test</string>
+    <string name="test_ready">¿Estás listo?</string>
+    <string name="test_sending">Mandando tus resultados, por favor espera</string>
+    <string name="test_no_test">Por ahora no hay preguntas que contestar</string>
+    <string name="test_no_test_1">Te avisaré más tarde para saber como sigues</string>
+    <!--Profile-->
+    <string name="profile_illnesses">Padeciminetos</string>
+    <string name="profile_meds">Medicamentos</string>
+    <string name="profile_name">Nombre</string>
+    <string name="profile_range">Rangos</string>
+    <string name="profile_symptom">Malestar</string>
+    <string name="profile_dosage">Dosis</string>
+    <string name="profile_weight_magnitude">kg</string>
+    <string name="profile_height_magnitude">m</string>
+    <string name="profile_back">Regresar</string>
+    <!--Notification-->
+    <string name="notification_title">Bluo</string>
+    <string name="notification_content">¡Hay un nuevo test para tí!</string>
+    <!--Pusher - dir. Nicholas Winding Refn-->
+    <string name="pusher_app_key">bd3c348462d667060c72</string>
+</resources>

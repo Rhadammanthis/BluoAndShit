@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardGreyBackground"
+    tools:context="mx.triolabs.pp.ui.MainActivity"
+    android:weightSum="1">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Entrar"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/styled_button_background"
+        android:textColor="@drawable/styled_button_text" />
+
+    <Button
+        android:text="Entrar"
+        android:textOff="Entrar"
+        android:textOn="Entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/styled_button_background"
+        android:textColor="@drawable/styled_button_text" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@color/blueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <ToggleButton
+        android:text="Entrar"
+        android:textOff="Entrar"
+        android:textOn="Entrar"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_styled_button_background"
+        android:textColor="@drawable/dark_styled_button_text" />
+
+    <ToggleButton
+        android:text="Entrar"
+        android:textOff="Entrar"
+        android:textOn="Entrar"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_styled_button_background"
+        android:textColor="@drawable/dark_styled_button_text" />
+
+    <TextView
+        android:padding="8dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/styled_text_input"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        android:id="@+id/editText"
+        android:layout_weight="0.27" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:background="@drawable/selector_mediciones"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButton" />
+        <ToggleButton
+            android:background="@drawable/selector_test"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButton1" />
+        <ToggleButton
+            android:background="@drawable/selector_ultima_medicion"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButton2" />
+        <ToggleButton
+            android:background="@drawable/selector_usuario"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButton3" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

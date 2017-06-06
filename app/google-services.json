@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "1081706108298",
+    "firebase_url": "https://fir-bluo.firebaseio.com",
+    "project_id": "firebase-bluo",
+    "storage_bucket": "firebase-bluo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081706108298:android:5ec223817087787f",
+        "android_client_info": {
+          "package_name": "com.bluo.triolabs.bluo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081706108298-l967s7lnimt62qsf4m4cqk44pvno3uhk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1081706108298-4a6bl1qb875r76hatpn1pk7vhmkv09t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGnBpyXBrVll5VXR5jgwXfQ3MBKMwbTr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89410596-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081706108298:android:0d24255e9b1cedb8",
+        "android_client_info": {
+          "package_name": "mx.triolabs.pp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081706108298-l967s7lnimt62qsf4m4cqk44pvno3uhk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1081706108298-4a6bl1qb875r76hatpn1pk7vhmkv09t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGnBpyXBrVll5VXR5jgwXfQ3MBKMwbTr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89410596-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

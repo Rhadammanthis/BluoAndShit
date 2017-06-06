@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="mx.triolabs.pp.ui.LoginActivity">
+
+    <ImageView
+        android:background="@drawable/a_login_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/login_rl_message"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login_et_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:enabled="false"
+            android:ems="10"
+            android:textColor="@color/hint"
+            android:background="@drawable/styled_text_input"
+            android:padding="10dip" />
+
+        <EditText
+            android:id="@+id/login_et_phone_number"
+            android:gravity="center"
+            android:hint="@string/login_input_hint"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="14"
+            android:textColorHint="@color/hint"
+            android:background="@drawable/styled_text_input"
+            android:padding="10dip" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login_b_login"
+        android:text="@string/login_button"
+        android:layout_below="@+id/login_rl_message"
+        android:layout_marginTop="20dip"
+        android:minHeight="35dip"
+        android:background="@drawable/styled_toggle_button_background"
+        android:textColor="@drawable/styled_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

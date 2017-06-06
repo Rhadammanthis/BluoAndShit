@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/illnesses_ll"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/meds_tv_name"
+            android:text="@string/profile_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"/>
+
+        <TextView
+            android:id="@+id/meds_tv_symptom"
+            android:text="@string/profile_range"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"/>
+
+        <TextView
+            android:id="@+id/meds_tv_dosage"
+            android:text="@string/profile_range"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/cardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/illnesses_ll"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
